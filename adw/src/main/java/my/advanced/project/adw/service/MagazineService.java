@@ -19,4 +19,8 @@ public class MagazineService {
 	public List<Magazine> getAllMagazines(){
 		return magazineRepository.findAll();
 	}
+	
+	public Magazine findById(Integer id) {
+		return magazineRepository.findById(id).get();
+	}
 }
