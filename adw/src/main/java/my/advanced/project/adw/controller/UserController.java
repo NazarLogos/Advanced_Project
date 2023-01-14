@@ -7,11 +7,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
-import my.advanced.project.adw.domain.Magazine;
-import my.advanced.project.adw.domain.User;
-import my.advanced.project.adw.service.MagazineService;
 import my.advanced.project.adw.service.UserService;
 
 
@@ -19,9 +15,7 @@ import my.advanced.project.adw.service.UserService;
 public class UserController  {
     @Autowired
     private UserService userService;
-    
-    @Autowired
-    private MagazineService magazineService;
+
 
 
 
@@ -56,15 +50,5 @@ public class UserController  {
     }
 
     @RequestMapping(value ="/home", method = RequestMethod.GET)
-	public ModelAndView welcome() {
-		ModelAndView map = new ModelAndView("home");
-		map.addObject("magazines", magazineService.getAllMagazines());
 
-		return map;
-	}
-    
-    @RequestMapping(value ="/create-magazine", method = RequestMethod.GET)
-    public String  createMagazine() {
-    	return "createMagazine";
-    }  
 }
