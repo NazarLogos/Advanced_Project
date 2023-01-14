@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Periodicals</title>
+<title>Magazines</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
 		<!-- Page Content -->
 		<div style="margin-left: 10%">
 			<div class="w3-container w3-teal">
-				<h1>Create new Periodical</h1>
+				<h1>Create new Magazine</h1>
 			</div>
 			<div class="w3-container">
 				<c:if test="${pageContext.request.userPrincipal.name != null}">

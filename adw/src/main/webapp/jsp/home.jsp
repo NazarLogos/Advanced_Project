@@ -12,6 +12,10 @@
 <head>
 
 
+<title>Magazines</title>
+
+
+
 <link href="${contextPath}/resources/css/bootstrap.min.css"
 	rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -38,7 +42,7 @@
 		<div style="margin-left: 10%">
 
 			<div class="w3-container w3-teal">
-				<h1>Periodicals</h1>
+				<h1>Magazines</h1>
 			</div>
 
 			<div class="w3-container">
