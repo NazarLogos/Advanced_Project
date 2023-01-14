@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 import javax.persistence.Table;
 
 @Entity
@@ -24,6 +25,8 @@ public class Magazine {
 	@Column
 	private Double price;
 	
+	@Lob
+	private String encodedImage;
 	public Magazine() {}
 	
 	public Magazine(String name, String description, Double price) {
@@ -71,6 +74,14 @@ public class Magazine {
 
 	public void setPrice(Double price) {
 		this.price = price;
+	}
+	
+	public String getEncodedImage() {
+		return encodedImage;
+	}
+
+	public void setEncodedImage(String encodedImage) {
+		this.encodedImage = encodedImage;
 	}
 
 	@Override

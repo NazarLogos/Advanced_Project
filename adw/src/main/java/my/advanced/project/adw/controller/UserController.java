@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import my.advanced.project.adw.domain.User;
 import my.advanced.project.adw.service.UserService;
 
 
@@ -16,6 +15,7 @@ import my.advanced.project.adw.service.UserService;
 public class UserController  {
     @Autowired
     private UserService userService;
+
 
 
 
@@ -50,8 +50,5 @@ public class UserController  {
     }
 
     @RequestMapping(value ="/home", method = RequestMethod.GET)
-    public String welcome(Model model) {
-        return "home";
-    }
-    
+
 }
